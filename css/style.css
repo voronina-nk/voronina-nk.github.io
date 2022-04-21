@@ -1,0 +1,832 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    background: #212121;
+    border: solid 1px #000;
+    height: 53px;
+    padding: 10px 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu .menu_item {
+    border-right: dashed 2px #000;
+    padding: 3px 30px;
+}
+
+.menu .menu_item:last-child {
+    border-right: none;
+}
+
+.menu .menu_item .menu_link {
+    color: #fff;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.promo {
+    position: relative;
+    min-height: 800px;
+    background: url(../img/uber_bg.jpg) no-repeat 50% 0 / cover;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px 0;
+}
+
+.header .row {
+    align-items: center;
+}
+
+.logo:hover {
+    text-decoration: none;
+}
+
+.logo_text {
+    font-style: normal;
+    font-weight: 100;
+    font-size: 13px;
+    color: #fff;
+}
+
+.header_contact {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    text-align: right;
+    color: #fff;
+    margin: 0;
+}
+
+.header_contact a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.header_contact span {
+    display: block;
+}
+
+.header_callback {
+    width: 172px;
+    height: 46px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+    background-color: #1EACC7;
+    background-image: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.header_callback:hover {
+    background-color: #F9BF3B;
+    background-image: linear-gradient(0deg, #F9BF3B 0%, #F9BF3B 100%);
+
+}
+
+.promo .promo_wrapper {
+    min-height: 800px;
+    padding-top: 150px;
+    text-align: center;
+    color: #fff;
+}
+
+.promo .promo_wrapper .promo_subtitle {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+}
+
+.promo .promo_wrapper .promo_title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.promo .promo_wrapper .promo_text {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px 90px;
+    color: #fff;
+}
+
+.promo .promo_wrapper .promo_button {
+    width: 260px;
+    height: 63px;
+    background: linear-gradient(0deg, #2798B9 0%, #3AB6DA 100%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.22);
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 115px;
+    margin-bottom: 35px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s;
+}
+
+.promo .promo_wrapper .promo_button:hover {
+    background: #F9BF3B;
+}
+
+.promo .promo_wrapper .promo_button:active {
+    background: #333230;
+    box-shadow: inset 1px 1px 5px 1px rgb(0, 0, 0);
+}
+
+.advantages {
+    padding: 25px 0 65px;
+}
+
+.advantages .row {
+    margin-top: 30px;
+}
+
+/* прописываем общие стили для заголовков */
+.tag {
+    margin: 0 auto;
+    width: 113px;
+    height: 24px;
+    color: #fff;
+    background: #000;
+    font-weight: 400;
+    font-size: 11px;
+    text-align: center;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+.tag.tag_white {
+    color: #000;
+    background: #fff;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 32px;
+    color: #222222;
+}
+
+.title.title_white {
+    color: #fff;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    text-align: center;
+    color: #222222;
+}
+
+.subtitle.subtitle_white {
+    color: #fff;
+}
+
+/* конец общих стилей заголовков */
+/* 
+.row {
+    margin-top: 15px;
+   
+} */
+
+.advantages_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.text_box {
+    margin-left: 25px;
+    margin-right: 40px;
+
+}
+
+.advantages_item h3 {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: #1EACC7;
+}
+
+.advantages_item p {
+    margin-bottom: 0;
+    font-size: 15px;
+    color: #202020;
+}
+
+/* мобильное приложение убер */
+.app {
+    background: url(../img/mobile_bg.jpg) no-repeat 0 50% / cover;
+    min-height: 864px;
+    padding: 25px 0 56px;
+}
+
+.app .row {
+    margin-top: 30px;
+}
+
+.app_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 320px;
+    height: 280px;
+    margin: 0 auto 26px;
+}
+
+.app_item h3 {
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+}
+
+.app_button {
+    width: 29px;
+    height: 29px;
+    color: #1EACC7;
+    background: #000000;
+    border: 0;
+    border-radius: 50%;
+}
+
+.app_button:hover {
+    background: #ffffff;
+}
+
+/* Выбор - отличная штука! */
+.order {
+    background: url(../img/auto_bg.jpg) no-repeat 0 50% / cover;
+    min-height: 864px;
+    padding-top: 48px;
+}
+
+.order_img {
+    width: 759px;
+    height: 480px;
+    margin: 0 auto;
+    margin-top: 55px;
+    max-width: 100%;
+}
+
+.order_img img {
+    width: 100%;
+}
+
+.order_text {
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+    color: #222222;
+}
+
+/* условия и требования */
+.terms {
+    min-height: 864px;
+    padding: 48px 0 80px;
+}
+
+.terms .row {
+    margin-top: 30px;
+}
+
+.terms_item h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 24px;
+    padding: 20px;
+}
+
+.terms_item ul {
+    margin-left: 18px;
+}
+
+.terms_item li {
+    position: relative;
+    padding-left: 40px;
+    list-style-type: none;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 24px;
+    color: #222222;
+    margin-top: 10px;
+}
+
+.terms_item li:before {
+    content: "";
+    display: inline-block;
+    width: 21px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* .terms_item li + li {
+ margin-top: 10px;
+} */
+/* .terms_item li:not(:first-child) {
+    margin-top: 20px;
+} */
+
+.terms_item li:first-child {
+    margin-top: 0;
+}
+
+.terms_item_blue {
+    margin-top: 30px;
+}
+
+.terms_item_blue h3 {
+    color: #1CA8C3;
+}
+
+.terms_item_blue h4 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 24px;
+    color: #1CA8C3;
+}
+
+.terms_item_blue li:before {
+    background-image: url(../img/mark_blue.png);
+}
+
+.terms_item_red {
+    margin-top: 60px;
+}
+
+.terms_item_red h3 {
+    color: #FF5656;
+}
+
+.terms_item_red li:before {
+    background-image: url(../img/mark_red.png);
+}
+
+
+
+/* Города */
+.map {
+    text-align: center;
+    min-height: 600px;
+    padding-top: 48px;
+    background: url(../img/world_map.jpg) no-repeat 50% 0 / cover;
+}
+
+.map_items {
+    min-height: 535px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.all_sities a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 68px;
+    text-transform: uppercase;
+    color: #1FBAD6;
+}
+
+.footer .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.footer_item {
+    margin-top: 15px;
+    padding-bottom: 40px;
+}
+
+.footer_menu:before {
+    content: "";
+    display: block;
+    width: 301px;
+    height: 5px;
+    margin: 0 auto;
+    background: #1FBAD6;
+    margin-bottom: 30px;
+}
+
+.footer_menu {
+    text-align: center;
+}
+
+.footer_menu a {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #070716;
+    padding-right: 15px;
+}
+
+.footer_submenu {
+    text-align: center;
+}
+
+.footer_submenu a {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    color: #999999;
+}
+
+.social_media {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 25px;
+}
+
+.social_media a {
+    width: 32px;
+    height: 32px;
+    color: #fff;
+    background: #000;
+    border-radius: 50%;
+    font-size: 17px;
+    text-align: center;
+    line-height: 32px;
+    margin-right: 9px;
+    transition: all 0.3s;
+}
+
+.social_media a:hover {
+    background: #F9BF3B;
+}
+
+.app_store {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+@media(max-width: 1199px) {
+    .menu .menu_item {
+        padding: 3px 20px;
+    }
+
+    .menu .menu_item .menu_link {
+        font-size: 14px;
+    }
+
+    .app_item {
+        width: 300px;
+    }
+}
+
+@media(max-width: 991px) {
+    .menu .menu_item {
+        padding: 3px 15px;
+    }
+
+    .menu .menu_item .menu_link {
+        font-size: 11px;
+    }
+
+    .header_logo {
+        width: 100%;
+    }
+
+    .logo_text {
+        font-size: 12px;
+    }
+
+    .header_callback {
+        width: 150px;
+        height: 45px;
+    }
+
+    .promo .promo_wrapper .promo_subtitle {
+        font-size: 46px;
+    }
+
+    .promo .promo_wrapper .promo_text {
+        padding: 19px 0px;
+    }
+
+    .promo .promo_wrapper .promo_button {
+        margin-top: 55px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .advantages .row {
+        margin-top: 25px;
+    }
+
+    .advantages_item {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .advantages .text_box {
+        padding-top: 10px;
+    }
+
+    .app_item {
+        max-width: 100%;
+        width: 320px;
+    }
+
+    .terms_item ul {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .footer .row {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer_item {
+        margin-top: 25px;
+    }
+
+    .social_media {
+        justify-content: center;
+        margin: 0 0 20px;
+    }
+
+    .app_store {
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+
+    .footer_menu:before {
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+
+    .footer_menu a:last-child {
+        padding-right: 0;
+    }
+
+    .footer_submenu a:first-child {
+        margin-left: 0;
+    }
+
+}
+
+@media(max-width: 767px) {
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        height: 40px;
+    }
+
+    .menu {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        bottom: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 60px;
+        width: 320px;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 1;
+        transition: all 0.3s;
+    }
+
+    .menu_active {
+        left: 0;
+    }
+
+    .toogle_menu {
+        width: 26px;
+        background: none;
+        border: none;
+        padding: 0;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .toogle_menu span {
+        display: block;
+        height: 2px;
+        background-color: #fff;
+        margin-bottom: 3px;
+        transition: all 0.3s;
+    }
+
+    .toogle_menu span:last-child {
+        margin-bottom: 0;
+    }
+
+    .toogle_menu_active span {
+        margin-bottom: -1px;
+    }
+
+    .toogle_menu_active span:nth-child(1) {
+        transform: rotate(45deg);
+    }
+
+    .toogle_menu_active span:nth-child(2) {
+        display: none;
+    }
+
+    .toogle_menu_active span:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+
+    .menu .menu_item {
+        padding: 10px 30px;
+    }
+
+    .menu .menu_item .menu_link {
+        font-size: 20px;
+    }
+
+    .header {
+        padding: 10px 0;
+    }
+
+    .logo {
+        position: relative;
+        display: inline-block;
+        top: 13px;
+    }
+
+    .logo_text, .header_contact span, .promo_text {
+        display: none;
+    }
+
+    .header_contact {
+        margin-bottom: 5px;
+    }
+
+    .header_contact a {
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .header_callback {
+        display: block;
+        margin-left: auto;
+        width: 130px;
+        height: 30px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .promo {
+        min-height: 400px;
+        padding-top: 40px;
+    }
+
+    .promo .promo_wrapper {
+        min-height: auto;
+        padding-top: 140px;
+    }
+
+    .promo .promo_wrapper .promo_subtitle {
+        font-size: 30px;
+    }
+
+    .promo .promo_wrapper .promo_title {
+        font-size: 20px;
+    }
+
+    .promo .promo_wrapper .promo_button {
+        width: 210px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .title {
+        margin-top: 15px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .advantages_item img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .advantages_item h3 {
+        font-size: 16px;
+    }
+
+    .app_item h3 {
+        font-size: 18px;
+    }
+
+    .app_item {
+        height: 254px;
+    }
+
+    .order {
+        min-height: auto;
+        background: #070716;
+        padding: 25px 0 30px;
+    }
+
+    .order_img {
+        height: auto;
+    }
+
+    .order_text {
+        color: #fff;
+        padding-top: 23px;
+    }
+
+    .terms {
+        min-height: auto;
+        padding: 25px 0 30px;
+    }
+
+    .terms_item_blue {
+        margin-top: 5px;
+    }
+
+    .terms_item_red {
+        margin-top: 5px;
+    }
+
+    .map {
+        min-height: auto;
+        padding-top: 25px;
+    }
+
+    .map_items {
+       min-height: 353px; 
+    }
+    
+}
+
+@media(max-width: 575px) {}
+
+@media(max-width: 360px) {
+    .menu {
+         width: 80%;
+    }
+}
